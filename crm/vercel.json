@@ -1,13 +1,13 @@
 {
     "builds": [{
-        "src": "crm/wsgi.py",
+        "src": "crm/crm/wsgi.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
     }],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "crm/wsgi.py"
+            "dest": "crm/crm/wsgi.py"
         }
     ]
 }
